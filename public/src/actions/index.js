@@ -13,7 +13,7 @@ var root_url;
 if (process.env.NODE_ENV === 'development') {
   root_url = 'http://localhost:3000/api';
 } else {
-  root_url = '/api'
+  root_url = 'https://agile-depths-61195.herokuapp.com/api'
 }
 
 export function fetchSpotifyToken(id) {
