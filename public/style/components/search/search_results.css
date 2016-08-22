@@ -1,0 +1,21 @@
+.search-results {
+  width: 230px;
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: white;
+}
+
+.search-results-heading {
+  color: rgb(160, 160, 160);
+  font-size: .8em;
+  letter-spacing: 1px;
+  padding-top: 10px;
+}
+
+#empty-search-results {
+  background-color: none;
+  opacity: 0;
+}

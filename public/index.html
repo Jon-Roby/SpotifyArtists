@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Artists</title>
+    <link rel="icon" href="/style/images/spotify_icon_black.png">
+
+    <!-- <link rel="preload" href="https://fonts.googleapis.com/css?family=Montserrat" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"></noscript>
+
+    <link rel="preload" href="/build/style.css" as="style" onload="this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/build/style.css"></noscript> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="/build/style.css">
+  </head>
+
+  <body>
+    <div class="app"></div>
+  </body>
+
+  <script async src="/build/bundle.js"></script>
+  <script>
+    (function() {
+      document.addEventListener("scroll", function () {
+        var elem = document.getElementById('navbar-container');
+        var scrollPosition = document.body.scrollTop || document.documentElement.scrollTop;
+        if (scrollPosition > 0) {
+          elem.style.backgroundColor = 'rgba(0,0,0,0.9)';
+        } else {
+          elem.style.backgroundColor = 'transparent';
+        }
+      });
+    })();
+  </script>
+</html>

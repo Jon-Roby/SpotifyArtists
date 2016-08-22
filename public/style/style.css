@@ -1,0 +1,42 @@
+body {
+  font-family: 'Montserrat-Light', sans-serif;
+  background-color: rgb(24, 24, 24);
+}
+
+* {
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #363636;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+ padding: 0px;
+}
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+.navbar-separation {
+  padding-top: 130px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}

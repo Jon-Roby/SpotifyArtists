@@ -1,0 +1,95 @@
+#banner-top {
+  display: flex;
+  flex-direction: row;
+}
+
+#banner-top-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-bottom: 30px
+}
+
+#banner-top-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#banner-top-artist-followers {
+
+  color: white;
+  letter-spacing: 1px;
+  font-size: .75em;
+  color: #95a5a6;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+
+}
+
+#banner-top-artist-title {
+  font-family: 'Montserrat-Light';
+  color: #95a5a6;
+  font-size: .7em;
+  letter-spacing: 1px;
+}
+
+#banner-top-artist-name {
+  font-size: 3em;
+  font-family: 'Montserrat-UltraLight';
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#banner-top-artist-button-link {
+  background-color: rgb(29, 185, 84);
+  border-radius: 15px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+}
+
+#banner-top-artist-button-link a {
+  font-family: 'Montserrat-Light';
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  letter-spacing: 1px;
+  font-size: .7em;
+}
+
+@media (max-width: 1020px) {
+  #banner {
+    padding: 0px;
+  }
+
+  #banner-top {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  #banner-top-media-query {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+  #banner-top-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0px;
+  }
+
+  #banner-top-artist-title {
+    display: none;
+  }
+}

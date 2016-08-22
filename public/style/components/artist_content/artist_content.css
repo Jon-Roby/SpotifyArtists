@@ -1,0 +1,207 @@
+#artist-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artist-content-heading {
+  color: rgb(160, 160, 160);
+  font-size: .8em;
+  letter-spacing: 1px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+
+.popular-tracks-item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #282828;
+}
+
+.popular-tracks:nth-child(1) {
+  border-top: 1px solid #282828;
+}
+
+.popular-tracks-item img {
+  height: 40px;
+  width: 40px;
+}
+
+
+.popular-tracks-item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat-Light';
+  font-size: .8em;
+  letter-spacing: .5px;
+}
+
+.popular-tracks-item-number {
+  color: grey;
+  padding-left: 15px;
+}
+
+.popular-tracks-item-name {
+  padding-left: 30px;
+
+  color: rgb(223, 224, 230);
+}
+
+
+/******************************************************************************/
+
+.related-artists-item {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.related-artists:nth-child(1) {
+  border-top: 1px solid #282828;
+}
+
+.related-artists-item img {
+  height: 55px;
+  width: 55px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+.related-artists-item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat-Light';
+  font-size: .8em;
+  letter-spacing: .5px;
+}
+
+.related-artists-item-name {
+  padding-left: 20px;
+  color: rgb(223, 224, 230);
+}
+
+.related-artists-item-name:hover {
+  color: white;
+}
+
+
+/******************************************************************************/
+
+#artist-content-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+#artist-content-top-left {
+  width: 60%;
+}
+
+#artist-content-top-right {
+  width: 30%;
+}
+
+/******************************************************************************/
+
+#albums {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #282828;
+}
+
+.albums {
+  width: 22%;
+  height: 275px;
+  color: #FFF;
+  background-color: #282828;
+
+  margin-left: 3%;
+  margin-top: 3%;
+}
+
+.albums:nth-child(1), .albums:nth-child(5), .albums:nth-child(9), .albums:nth-child(13) {
+  margin-left: 0px;
+}
+
+.albums-item-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.albums-item-text {
+  padding-top: 16px;
+  padding-left: 10px;
+  font-family: 'Montserrat-Light';
+  font-size: .8em;
+  letter-spacing: .5px;
+}
+
+@media (max-width: 1020px) {
+  #artist-content {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #artist-content-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #artist-content-top-left {
+    width: 100%;
+  }
+
+  #artist-content-top-right {
+    width: 100%;
+  }
+
+  .albums {
+    width: 30%;
+    height: 320px;
+    margin-left: 5%;
+    margin-top: 3%;
+  }
+
+  .albums:nth-child(1), .albums:nth-child(4), .albums:nth-child(7), .albums:nth-child(10) {
+    margin-left: 0px;
+  }
+
+  .albums:nth-child(5), .albums:nth-child(9), .albums:nth-child(13) {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 650px) {
+  .albums:nth-child(1),
+  .albums:nth-child(3),
+  .albums:nth-child(5),
+  .albums:nth-child(7),
+  .albums:nth-child(9),
+  .albums:nth-child(11),
+  .albums:nth-child(13) {
+    margin-left: 0px;
+  }
+
+  .albums:nth-child(2),
+  .albums:nth-child(4),
+  .albums:nth-child(6),
+  .albums:nth-child(8),
+  .albums:nth-child(10),
+  .albums:nth-child(12),
+  .albums:nth-child(14) {
+    margin-left: 10%;
+  }
+
+
+
+  .albums {
+    width: 45%;
+    margin-left: 10%;
+  }
+
+}
